@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sua_Pmuon"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_maPmuonn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ma phieu muon"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/tv_tentvien_pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ten thanh vien"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"
+                android:paddingLeft="13dp"
+                android:textSize="15dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_tensach_pm"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="13dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/trasach_pm"
+                    android:textColor="#0027FF"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="13dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="5dp"
+                   />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_tienthue_pm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tien thue"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="13dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ngaythue_pm"
+
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="13dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                  />
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="-8dp"
+            android:src="@drawable/ic_close"
+            android:id="@+id/imgdelete_pmuon"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

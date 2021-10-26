@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/drawable/ic_picture_24.xml" value="0.403125" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.403125" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_frag_change_pass.xml" value="0.3595505617977528" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_frag_loai_sach.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_frag_phieu_muon.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_frag_sach.xml" value="0.21291866028708134" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_frag_thanh_vien.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_frag_top10.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_frang_doanh_thu.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_hello.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_login.xml" value="0.3729166666666667" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/custom_view_lsach.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/custom_view_phieumuon.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/custom_view_sach.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/custom_view_thanhvien.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/frag_add_lsach.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/frag_add_tvien.xml" value="0.5" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/frag_addphieumuon.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/frag_addsach.xml" value="0.25" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/frag_sua_lsach.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/fragment_them_nguoi_dung.xml" value="0.33" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/header_nav.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/loai_sach_item_spinner.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/sach_item_spinner.xml" value="0.3729166666666667" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/thanh_vien_item_spinner.xml" value="0.3729166666666667" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/layout/top_item.xml" value="0.3729166666666667" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/menu/menu.xml" value="0.38697916666666665" />
+        <entry key="..\:/AndroidNangCao/namnhph14161_ASM_DuAnMau/app/src/main/res/menu/menu_nav.xml" value="0.38697916666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
