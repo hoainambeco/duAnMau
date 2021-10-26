@@ -60,8 +60,10 @@ public class DAOsach {
     }
     public ArrayList<Sach> getsearch(String text){
         ArrayList<Sach> list=new ArrayList<>();
-        String sql=" SELECT * FROM Sach WHERE Sach.trang>?";
-        Cursor cursor=db.rawQuery(sql, new String[]{text});
+//        String sql=" SELECT * FROM Sach WHERE Sach.trang>?";
+        String a = "%"+text+"%";
+        String sql = "SELECT * FROM Sach WHERE tenSach LIKE ?";
+        Cursor cursor=db.rawQuery(sql, new String[]{a});
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
             int masach= cursor.getInt(0);

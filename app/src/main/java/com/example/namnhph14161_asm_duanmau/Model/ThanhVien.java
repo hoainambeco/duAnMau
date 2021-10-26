@@ -4,14 +4,24 @@ public class ThanhVien {
     private int maTV;
     private String hoTenTV;
     private String namSinh;
+    private int STK;
+
+    public int getSTK() {
+        return STK;
+    }
+
+    public void setSTK(int STK) {
+        this.STK = STK;
+    }
 
     public ThanhVien() {
     }
 
-    public ThanhVien(int maTV, String hoTenTV, String namSinh) {
+    public ThanhVien(int maTV, String hoTenTV, String namSinh,int stk) {
         this.maTV = maTV;
         this.hoTenTV = hoTenTV;
         this.namSinh = namSinh;
+        this.STK = stk;
     }
 
     public int getMaTV() {

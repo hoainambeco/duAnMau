@@ -38,7 +38,7 @@ public class frag_ThanhVien extends Fragment {
     ArrayList<ThanhVien> list;
     FloatingActionButton  fab;
     Dialog dialog;
-    EditText edMaTV, edTenTV, edNamSinh;
+    EditText edMaTV, edTenTV, edNamSinh,edStk;
     Button btnSave, btnCancel;
     static ThanhVienDAO dao;
     ThanhVienAdapter adapter;
@@ -112,6 +112,7 @@ public class frag_ThanhVien extends Fragment {
         edMaTV = dialog.findViewById(R.id.ed_maTvien);
         edTenTV = dialog.findViewById(R.id.ed_tenTvien);
         edNamSinh = dialog.findViewById(R.id.ed_namsinhTvien);
+        edStk = dialog.findViewById(R.id.ed_STK);
 
         btnSave = dialog.findViewById(R.id.btn_add_Tvien);
         btnCancel = dialog.findViewById(R.id.btn_huy_Tvien);
@@ -122,6 +123,7 @@ public class frag_ThanhVien extends Fragment {
             edMaTV.setText(String.valueOf(item.getMaTV()));
             edTenTV.setText(String.valueOf(item.getHoTenTV()));
             edNamSinh.setText(String.valueOf(item.getNamSinh()));
+            edStk.setText(String.valueOf(item.getSTK()));
         }
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,6 +137,7 @@ public class frag_ThanhVien extends Fragment {
                 item = new ThanhVien();
                 item.setHoTenTV(edTenTV.getText().toString());
                 item.setNamSinh(edNamSinh.getText().toString());
+                item.setSTK(Integer.parseInt(edStk.getText().toString()));
                 if (validate() > 0){
                     if (type == 0 ){
                         if (dao.insert(item) > 0){
@@ -186,7 +189,7 @@ public class frag_ThanhVien extends Fragment {
     }
     public  int validate(){
         int check =1;
-        if (edTenTV.getText().toString().length() == 0 || edNamSinh.getText().toString().length() == 0 ){
+        if (edTenTV.getText().toString().length() == 0 || edNamSinh.getText().toString().length() == 0 || edStk.getText().toString().length() ==0){
             Toast.makeText(getContext(),"Bạn phải nhập đủ thông tin", Toast.LENGTH_SHORT).show();
             check = -1;
         }

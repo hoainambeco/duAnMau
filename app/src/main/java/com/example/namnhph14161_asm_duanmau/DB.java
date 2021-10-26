@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DB extends SQLiteOpenHelper {
     public DB(Context context) {
-        super(context, "PNLIB", null, 1);
+        super(context, "PNLIB", null, 2);
     }
 
     @Override
@@ -22,7 +22,8 @@ public class DB extends SQLiteOpenHelper {
         String tb_thanhvien=" CREATE TABLE ThanhVien ( " +
                 "maTV INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "hoTenTV TEXT NOT NULL," +
-                "namSinh TEXT NOT NULL) ";
+                "namSinh TEXT NOT NULL," +
+                "stk INTEGER NOT NULL) ";
         sqLiteDatabase.execSQL(tb_thanhvien);
 
         // tao bang loai sach

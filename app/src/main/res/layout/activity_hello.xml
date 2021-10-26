@@ -8,9 +8,19 @@
     android:orientation="vertical"
     tools:context=".Hello">
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="408dp"
-        app:srcCompat="@drawable/hello" />
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Xin vui lòng bấm vào logo để tiếp tục" />
+
+    <ImageButton
+        android:id="@+id/btnAnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hdicon" />
 </LinearLayout>

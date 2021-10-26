@@ -21,12 +21,14 @@ public class ThanhVienDAO {
         ContentValues values=new ContentValues();
         values.put("hoTenTV",thanhVien.getHoTenTV());
         values.put("namSinh",thanhVien.getNamSinh());
+        values.put("stk",thanhVien.getSTK());
         return db.insert("ThanhVien",null,values);
     }
     public long update(ThanhVien thanhVien){
         ContentValues values=new ContentValues();
         values.put("hoTenTV",thanhVien.getHoTenTV());
         values.put("namSinh",thanhVien.getNamSinh());
+        values.put("stk",thanhVien.getSTK());
         return db.update("ThanhVien",values,"maTV=?",new String[]{String.valueOf(thanhVien.getMaTV())});
 
     }
@@ -44,7 +46,8 @@ public class ThanhVienDAO {
             int matv= cursor.getInt(0);
             String hotentv= cursor.getString(1);
             String namsinh= cursor.getString(2);
-            ThanhVien thanhVien=new ThanhVien(matv,hotentv,namsinh);
+            int stk= Integer.parseInt(cursor.getString(3));
+            ThanhVien thanhVien=new ThanhVien(matv,hotentv,namsinh,stk);
             list.add(thanhVien);
             cursor.moveToNext();
         }
@@ -72,7 +75,8 @@ public class ThanhVienDAO {
             int matv= cursor.getInt(0);
             String hotentv= cursor.getString(1);
             String namsinh= cursor.getString(2);
-            ThanhVien thanhVien=new ThanhVien(matv,hotentv,namsinh);
+            int stk= Integer.parseInt(cursor.getString(3));
+            ThanhVien thanhVien=new ThanhVien(matv,hotentv,namsinh,stk);
             list.add(thanhVien);
             cursor.moveToNext();
         }

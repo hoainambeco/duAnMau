@@ -2,6 +2,7 @@ package com.example.namnhph14161_asm_duanmau.Adapter;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +30,7 @@ public class ThanhVienAdapter extends ArrayAdapter<ThanhVien> implements Filtera
     frag_ThanhVien frag_thanhVien;
     private ArrayList<ThanhVien> lists;
     private ArrayList<ThanhVien> arrayList;//tạo mới
-    TextView tvMaTV, tvTenTV, tvNamSinh;
+    TextView tvMaTV, tvTenTV, tvNamSinh,tvSTK;
     ImageView imgDel;
 
     public ThanhVienAdapter(Context context, frag_ThanhVien frag_thanhVien, ArrayList<ThanhVien> lists) {
@@ -60,18 +61,25 @@ public class ThanhVienAdapter extends ArrayAdapter<ThanhVien> implements Filtera
 
             tvNamSinh = view.findViewById(R.id.tv_namsinh_tvien);
             tvNamSinh.setText("Năm sinh: " + item.getNamSinh());
+
+            tvSTK = view.findViewById(R.id.tv_STK);
+            tvSTK.setText("Số tài khoản: "+ item.getSTK());
+            if (item.getSTK() % 5 ==0){
+                tvSTK.setTypeface(null, Typeface.BOLD);
+                tvSTK.setTextColor(Color.BLACK);
+            }
             imgDel = view.findViewById(R.id.imgdelete_tvien);
-// CÂU 2
-            if (position % 2 == 0){
-                tvMaTV.setTextColor(Color.GREEN);
-                tvTenTV.setTextColor(Color.GREEN);
-                tvNamSinh.setTextColor(Color.GREEN);
-            }
-            else {
-                tvMaTV.setTextColor(Color.RED);
-                tvTenTV.setTextColor(Color.RED);
-                tvNamSinh.setTextColor(Color.RED);
-            }
+
+//            if (position % 2 == 0){
+//                tvMaTV.setTextColor(Color.GREEN);
+//                tvTenTV.setTextColor(Color.GREEN);
+//                tvNamSinh.setTextColor(Color.GREEN);
+//            }
+//            else {
+//                tvMaTV.setTextColor(Color.RED);
+//                tvTenTV.setTextColor(Color.RED);
+//                tvNamSinh.setTextColor(Color.RED);
+//            }
         }
         imgDel.setOnClickListener(new View.OnClickListener() {
             @Override

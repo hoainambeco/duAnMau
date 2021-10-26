@@ -69,12 +69,19 @@ public class frag_Sach extends Fragment {
                 openDialog(getActivity(),0);
             }
         });
-        lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+//        lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+//            @Override
+//            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                item = list.get(position);
+//                openDialog(getActivity(),1);
+//                return false;
+//            }
+//        });
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 item = list.get(position);
                 openDialog(getActivity(),1);
-                return false;
             }
         });
         btnSearch.setOnClickListener(new View.OnClickListener() {
