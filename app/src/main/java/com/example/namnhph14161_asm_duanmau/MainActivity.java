@@ -32,6 +32,7 @@ import com.google.android.material.navigation.NavigationView;
  * Mã Sinh Viên: Ph14161
  * Lớp: CP16305
  */
+//pham tien da vao day te bay
 public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     DrawerLayout drawerLayout;
